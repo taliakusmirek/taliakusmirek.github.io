@@ -10,6 +10,7 @@ body {
 
 .name {
     background-color: #00906D;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: white;
     width: 430px;
     margin: auto;
@@ -155,18 +156,99 @@ footer {
     border-radius: 30px;
     font-size: 10px;
     right: 290px; 
-    width: 160px;
+    width: 150px;
     height: 30px;
     margin-top: 525px;
     margin-left: 90px;
     padding-left: 10px;
+    z-index: 40; /* Increase the z-index to bring the emojis above the contact div */
 }
+
+.fullstackchat {
+    text-decoration: underline;
+    color:black;
+}
+
+.fullstackchat:hover {
+    color: #00906D;
+}
+
 
 .sun {
     position: absolute;
-    right: 290px; 
-    width: 130px;
-    height: 130px;
+    right: -3px;
+    width: 30px;
+    height: 30px;
     z-index: 40; /* Increase the z-index to bring the emojis above the contact div */
-    margin-top: 25px;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .name {
+        width: 90%;
+        font-size: 30px;
+    }
+
+    .subname {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .stickies {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sticky {
+        width: 90%;
+    }
+
+    .contact {
+        flex-direction: row;
+    }
+
+    .contact a {
+        margin: 5px;
+    }
+
+    .contact img {
+        width: 35px;
+    }
+
+    footer {
+        font-size: 8px;
+        bottom:-50px;
+    }
+
+    @media (max-width: 768px) {
+        .circle,
+        .arrow,
+        .patharrow{
+            display: none;
+        }
+    }
+    .pink {
+        width: 102px;
+        right: 430px;
+        margin-top: -60px;
+    }
+
+    .purple {
+        width: 130px;
+        right: -65px;
+        margin-top: 40px;
+    }
+
+    .fullstack {
+        width: 155px;
+        right: 80px;
+        margin-top: 100px;
+        font-size: 10px;
+    }
+
+    .sun {
+        width: 30px;
+        right: -3px;
+    }
 }
