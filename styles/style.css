@@ -21,7 +21,7 @@ body {
 }
 
 .subname {
-    background-color: #BAD6FF;
+    background-color: #b2dcfa;
     width: 430px;
     margin: auto;
     padding: 30 30;
@@ -71,9 +71,10 @@ li {
 }
 .emojis {
     position: absolute;
-    right: 70px; 
-    width: 30px;
-    height: 30px;
+    right: 30px; 
+    width: 50px;
+    height: 50px;
+    margin-top: -30px;
     transform: rotate(-20deg); 
     z-index: 20; /* Increase the z-index to bring the emojis above the contact div */
 }
@@ -152,11 +153,11 @@ footer {
 
 .fullstack {
     position: absolute;
-    background-color: #BAD6FF;
+    background-color: #b2dcfa;
     border-radius: 30px;
     font-size: 10px;
     right: 290px; 
-    width: 150px;
+    width: 155px;
     height: 30px;
     margin-top: 525px;
     margin-left: 90px;
@@ -243,7 +244,7 @@ footer {
     .fullstack {
         width: 155px;
         right: 80px;
-        margin-top: 100px;
+        margin-top: 80px;
         font-size: 10px;
     }
 
